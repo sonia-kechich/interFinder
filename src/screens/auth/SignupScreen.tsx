@@ -55,6 +55,7 @@ export default function SignupScreen() {
     if (step < STEPS.length - 1) {
       setStep(s => s + 1);
     } else {
+      // TODO: Replace with real account-creation API call before production
       login(email, password);
     }
   };

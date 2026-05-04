@@ -20,7 +20,8 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
   const [user, setUser] = useState<User | null>(null);
 
   const login = (_email: string, _password: string) => {
-    // TODO: Replace with real authentication before production
+    // TODO: Replace with real API authentication (token storage, credential validation)
+    // before any production deployment. This currently sets a mock user directly.
     setUser(MOCK_USER);
   };
 
